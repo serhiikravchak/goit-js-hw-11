@@ -79,7 +79,6 @@ function newRenderOnSearch() {
   refs.div.innerHTML = '';
 }
 let pages = 1;
-console.log('1', pages);
 function onLoad(entries) {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
