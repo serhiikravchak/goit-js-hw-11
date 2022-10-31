@@ -10,7 +10,7 @@ export default class PixabayApiService {
   }
 
   async fetchArticles() {
-    const url = `${BASE_URL}?key=${API_KEY}&q=${this.searchValue}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=40`;
+    const url = `https://pixabay.com/api?key=${API_KEY}&q=${this.searchValue}&image_type=photo&orientation=horizontal&safesearch=true&page=${this.page}&per_page=40`;
     this.page += 1;
     try {
       const response = await axios.get(url);
